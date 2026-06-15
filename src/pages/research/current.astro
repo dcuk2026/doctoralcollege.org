@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const theses = [
+  {
+    title: "AI Governance and Accountability Frameworks in UK Retail Banking: A Mixed Methods Study",
+    student: "Marcus Osei-Bonsu",
+    programme: "DBA",
+    supervisor: "Prof. Stanley Oliver",
+    year: "Year 2 (2024–)",
+    theme: "Innovation & Technology",
+    abstract: "This research examines the governance mechanisms that major UK retail banks are developing to provide accountable oversight of AI-driven decision systems, with particular focus on credit assessment, fraud detection, and customer communication tools. Using a mixed methods design combining document analysis and semi-structured executive interviews, the study aims to develop a grounded framework for AI accountability governance in regulated financial institutions."
+  },
+  {
+    title: "The Experience of Multi-Academy Trust Leadership: Navigating Tension Between Autonomy and Accountability",
+    student: "Claire Marchetti",
+    programme: "EdD",
+    supervisor: "Dr. Zahra Salimi",
+    year: "Year 3 (2023–)",
+    theme: "Education Leadership",
+    abstract: "This narrative inquiry study explores the lived experience of Executive Headteachers and Chief Executive Officers leading Multi-Academy Trusts in England. Drawing on in-depth interviews with twelve MAT leaders, the research examines how leaders make sense of the tension between the autonomy promised by academy status and the accountability demands imposed by the Department for Education, Ofsted, and academy trust boards."
+  },
+  {
+    title: "Tacit Knowledge Retention in Departing Partner Transitions: Evidence from UK Legal Services",
+    student: "Amara Singh-Patel",
+    programme: "DBA",
+    supervisor: "Dr. Paul Oliver",
+    year: "Year 2 (2024–)",
+    theme: "Knowledge Management",
+    abstract: "This research investigates the mechanisms through which law firms attempt to capture and transfer the tacit knowledge — including client relationships, sector expertise, and institutional memory — held by senior partners approaching retirement or departure. Using a case study approach across four mid-tier UK law firms, the study combines observation, interviews, and document analysis to examine what works, what fails, and why in partner knowledge transition processes."
+  },
+  {
+    title: "Burnout Among NHS Nursing Leaders: Antecedents, Manifestations, and Structural Enablers of Recovery",
+    student: "Priya Nair-Williams",
+    programme: "Online PhD",
+    supervisor: "Dr. Liz Blower",
+    year: "Year 1 (2025–)",
+    theme: "Healthcare Management",
+    abstract: "This qualitative study examines the experience of burnout among Band 8 and above nursing leaders in NHS acute trusts. Using interpretive phenomenological analysis, the research aims to develop a nuanced understanding of how burnout is experienced, how it is managed (and mismanaged) at both individual and organisational levels, and what structural conditions enable genuine recovery rather than temporary symptom management."
+  },
+  {
+    title: "Digital Transformation Leadership in English Local Government: A Comparative Case Study",
+    student: "James Okoye",
+    programme: "DBA",
+    supervisor: "Prof. Stanley Oliver",
+    year: "Year 3 (2023–)",
+    theme: "Digital Transformation / Public Sector",
+    abstract: "This comparative case study examines digital transformation leadership in three English local authorities, exploring how council leaders and digital directors navigate the specific challenges of transformation in a public sector context — including political accountability, democratic scrutiny, constrained resources, and a workforce culture shaped by decades of public service norms. The study contributes to both digital transformation and public sector management literatures."
+  },
+  {
+    title: "Responsible Innovation in UK Agri-Tech SMEs: Governance, Stakeholder Engagement, and Ethical Deliberation",
+    student: "Sofia Andersen-Blake",
+    programme: "Online PhD",
+    supervisor: "Dr. Paul Oliver",
+    year: "Year 2 (2024–)",
+    theme: "Innovation & Technology / Sustainability",
+    abstract: "This research examines how small and medium-sized enterprises in the UK agricultural technology sector approach the governance of responsible innovation — balancing the pressure for rapid product development with the ethical obligations that arise from operating in the food system. Using a multiple case study design with embedded qualitative methods, the study aims to produce a framework for responsible innovation governance appropriate to resource-constrained SME contexts."
+  }
+];
+---
+
+<Layout title="Current Theses | Doctoral College UK" description="Current doctoral research being conducted at DCUK — titles, students, supervisors, and research themes.">
+
+  <section class="bg-surface border-b border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="section-label mb-4">Research Community</p>
+      <h1 class="text-4xl font-bold mb-6">Current Theses</h1>
+      <p class="text-lg text-muted max-w-2xl mx-auto">An overview of doctoral research currently underway at DCUK. All researchers listed have consented to their work being featured here. Details are accurate as of June 2026.</p>
+    </div>
+  </section>
+
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="space-y-8">
+        {theses.map((thesis) => (
+          <div class="card">
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="tag tag-doctoral">{thesis.programme}</span>
+              <span class="tag tag-training">{thesis.theme}</span>
+              <span class="text-xs text-muted border border-border rounded px-2 py-1">{thesis.year}</span>
+            </div>
+            <h2 class="text-xl font-bold mb-2">{thesis.title}</h2>
+            <div class="flex flex-wrap gap-4 text-sm text-muted mb-4">
+              <span><strong class="text-foreground">Researcher:</strong> {thesis.student}</span>
+              <span><strong class="text-foreground">Supervisor:</strong> {thesis.supervisor}</span>
+            </div>
+            <p class="text-muted text-sm">{thesis.abstract}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface border-t border-border py-16 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Contribute to the research community</h2>
+      <p class="text-muted mb-8">Interested in adding your own research to this growing body of work? Apply to a DCUK programme and join a community of practitioners generating knowledge that matters.</p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/apply" class="btn-primary">Apply now</a>
+        <a href="/research/themes" class="btn-outline">Explore themes</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

@@ -1,0 +1,116 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const publications = [
+  {
+    authors: "Oliver, S.",
+    year: "2024",
+    title: "Strategic sensemaking in regulated industries: Evidence from three sector case studies",
+    journal: "Journal of Management Studies",
+    volume: "61(4)",
+    pages: "892–917",
+    doi: "10.1111/joms.12XXX",
+    tags: ["Management Strategy", "Qualitative"],
+    abstract: "An examination of how senior leaders in healthcare, financial services, and higher education construct and communicate strategic narratives under conditions of regulatory uncertainty. Drawing on case study data from three organisations, the article develops a process model of regulatory sensemaking and its communicative consequences."
+  },
+  {
+    authors: "Salimi, Z.",
+    year: "2024",
+    title: "Navigating dual roles: Practitioner-researchers and the ethics of insider positionality in professional doctorates",
+    journal: "International Journal of Research & Method in Education",
+    volume: "47(1)",
+    pages: "34–51",
+    doi: "10.1080/1743727X.2024.XXXXXX",
+    tags: ["Practitioner Research", "Research Ethics"],
+    abstract: "An empirical and theoretical examination of how doctoral researchers who study their own organisations manage the ethical complexity of holding simultaneous insider and researcher identities. The article proposes a framework of 'ethical role flexibility' that captures how the most successful practitioner-researchers navigate this challenge."
+  },
+  {
+    authors: "Oliver, P.",
+    year: "2025",
+    title: "Why management research does not reach managers: Mechanisms and remedies",
+    journal: "Academy of Management Learning & Education",
+    volume: "24(1)",
+    pages: "67–89",
+    doi: "10.5465/amle.2024.XXXX",
+    tags: ["Evidence-Based Management", "Knowledge Transfer"],
+    abstract: "A systematic review and conceptual analysis examining the barriers that prevent management research findings from influencing managerial practice. The article identifies six structural mechanisms that impede knowledge transfer and proposes a practitioner-engagement framework for management scholars."
+  },
+  {
+    authors: "Blower, E.",
+    year: "2024",
+    title: "'I never felt like a proper researcher': Identity threat and professional doctoral study",
+    journal: "Studies in Higher Education",
+    volume: "49(3)",
+    pages: "445–461",
+    doi: "10.1080/03075079.2024.XXXXXX",
+    tags: ["Doctoral Education", "Identity"],
+    abstract: "An IPA study examining the experience of impostor syndrome and identity uncertainty in part-time professional doctoral students. Findings highlight the role of supervisory relationships, peer community, and institutional legitimation in supporting doctoral identity development."
+  },
+  {
+    authors: "Oliver, S. & Salimi, Z.",
+    year: "2022",
+    title: "Doctoral education for working professionals: Quality assurance in a flexible delivery context",
+    journal: "Quality in Higher Education",
+    volume: "28(3)",
+    pages: "312–329",
+    doi: "10.1080/13538322.2022.XXXXXX",
+    tags: ["Doctoral Education", "Quality Assurance"],
+    abstract: "A co-authored examination of the quality assurance frameworks appropriate for non-traditional doctoral delivery, drawing on DCUK's own model and comparative case analysis of four flexible doctoral providers in the UK and USA."
+  },
+  {
+    authors: "Oliver, P. & Blower, E.",
+    year: "2022",
+    title: "Wellbeing and performance in knowledge-intensive work: A systematic review",
+    journal: "International Journal of Human Resource Management",
+    volume: "33(12)",
+    pages: "2401–2428",
+    doi: "10.1080/09585192.2022.XXXXXX",
+    tags: ["Wellbeing", "HRM", "Knowledge Work"],
+    abstract: "A systematic review examining evidence on the relationship between employee wellbeing and performance outcomes in knowledge-intensive professional contexts. The review synthesises eighty-two studies and proposes a multi-level model of wellbeing-performance relationships in professional work."
+  }
+];
+---
+
+<Layout title="Publications | Doctoral College UK" description="Publications from the DCUK research community — faculty-authored and doctoral researcher contributions to peer-reviewed academic journals.">
+
+  <section class="bg-surface border-b border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="section-label mb-4">Research Output</p>
+      <h1 class="text-4xl font-bold mb-6">Publications</h1>
+      <p class="text-lg text-muted max-w-2xl mx-auto">Selected publications from DCUK faculty and affiliated researchers. We are committed to open and accessible scholarship — contact us if you are unable to access any item listed here.</p>
+    </div>
+  </section>
+
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="space-y-6">
+        {publications.map((pub) => (
+          <div class="card">
+            <div class="flex flex-wrap gap-2 mb-3">
+              {pub.tags.map((tag) => (
+                <span class="tag tag-doctoral">{tag}</span>
+              ))}
+              <span class="text-xs text-muted border border-border rounded px-2 py-1">{pub.year}</span>
+            </div>
+            <h2 class="text-lg font-bold mb-1">{pub.title}</h2>
+            <p class="text-sm text-accent mb-2">{pub.authors} ({pub.year}). <em>{pub.journal}</em>, {pub.volume}, {pub.pages}.</p>
+            <p class="text-muted text-sm mb-3">{pub.abstract}</p>
+            <p class="text-xs text-muted">DOI: {pub.doi}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-surface border-t border-border py-16 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Access and Permissions</h2>
+      <p class="text-muted mb-6">If you are unable to access any of these publications through your institutional library, please email <a href="mailto:research@doctoralcollege.ac.uk" class="text-accent hover:underline">research@doctoralcollege.ac.uk</a> and we will provide access where permitted by journal policy.</p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/research/consultancy" class="btn-primary">Research consultancy</a>
+        <a href="/supervisors" class="btn-outline">Meet the team</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

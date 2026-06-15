@@ -1,0 +1,314 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="The future of doctoral learning" description="A research environment for working scholars — flexible doctoral programmes, world-class supervision, and industry-connected innovation.">
+
+  <!-- Hero -->
+  <section class="relative min-h-[90vh] flex flex-col justify-center px-6 overflow-hidden" id="story">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-950/30 via-bg to-bg pointer-events-none"></div>
+    <div class="absolute top-1/3 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto w-full relative z-10">
+      <p class="section-label mb-6">Doctoral College UK</p>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl mb-6">
+        Shaping the future of doctoral <em class="italic font-light text-blue-300 not-italic">learning</em>
+      </h1>
+      <p class="text-lg text-muted-light max-w-xl mb-10 leading-relaxed">
+        A research environment for working scholars — flexible doctoral programmes, world-class supervision, and industry-connected innovation.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="/programmes/" class="btn-primary text-base px-7 py-3">Explore Programmes</a>
+        <a href="#story-video" class="btn-outline text-base px-7 py-3">Watch Our Story</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="border-y border-border bg-surface/30" id="stats">
+    <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <p class="text-4xl md:text-5xl font-bold counter" data-target="250" data-suffix="+">0+</p>
+        <p class="text-sm text-muted-light mt-2">PhDs</p>
+      </div>
+      <div class="text-center">
+        <p class="text-4xl md:text-5xl font-bold counter" data-target="42" data-suffix="+">0+</p>
+        <p class="text-sm text-muted-light mt-2">Countries</p>
+      </div>
+      <div class="text-center">
+        <p class="text-4xl md:text-5xl font-bold counter" data-target="97" data-suffix="%">0%</p>
+        <p class="text-sm text-muted-light mt-2">Satisfaction</p>
+      </div>
+      <div class="text-center">
+        <p class="text-4xl md:text-5xl font-bold counter" data-target="12" data-suffix="">0</p>
+        <p class="text-sm text-muted-light mt-2">Research Themes</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <p class="section-label mb-3">What We Do</p>
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Three pillars define how DCUK advances doctoral education.</h2>
+    <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <a href="/programmes/" class="card group">
+        <div class="w-10 h-10 rounded-lg bg-blue-900/50 flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Doctoral Programmes</h3>
+        <p class="text-sm text-muted-light leading-relaxed">Flexible pathways from Access to Doctorate through PhD, DBA, and EdD — designed for working researchers.</p>
+        <p class="text-sm text-accent mt-4">Learn more →</p>
+      </a>
+      <a href="/research/strategy/" class="card group">
+        <div class="w-10 h-10 rounded-lg bg-blue-900/50 flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Research &amp; Innovation</h3>
+        <p class="text-sm text-muted-light leading-relaxed">Twelve themed research groups producing industry-facing publications and commissioned case studies.</p>
+        <p class="text-sm text-accent mt-4">Learn more →</p>
+      </a>
+      <a href="/symposium/" class="card group">
+        <div class="w-10 h-10 rounded-lg bg-blue-900/50 flex items-center justify-center mb-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Events &amp; Community</h3>
+        <p class="text-sm text-muted-light leading-relaxed">Our annual Symposium, supervisor workshops, and researcher seminars throughout the year.</p>
+        <p class="text-sm text-accent mt-4">Learn more →</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Featured Programmes -->
+  <section class="border-t border-border bg-surface/20">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <p class="section-label mb-3">Featured Programmes</p>
+          <h2 class="text-3xl md:text-4xl font-bold">Flexible doctoral and training pathways.</h2>
+        </div>
+        <a href="/programmes/" class="text-sm text-accent hover:text-white transition-colors hidden md:block">View all →</a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="/programmes/dba/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-doctoral">Doctoral</span>
+            <span class="tag tag-doctoral">Blended</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Doctor of Business Administration (DBA)</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">A practice-based doctorate for senior professionals applying research to their organisations.</p>
+          <p class="text-sm font-medium text-white mt-4">From £8,500 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+        <a href="/programmes/edd/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-doctoral">Doctoral</span>
+            <span class="tag tag-doctoral">Online</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Doctor of Education (EdD)</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">A professional doctorate for educators and educational leaders.</p>
+          <p class="text-sm font-medium text-white mt-4">From £7,500 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+        <a href="/programmes/online-phd/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-doctoral">Doctoral</span>
+            <span class="tag tag-doctoral">Online</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Online PhD Programme</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">A flexible doctoral pathway for working professionals, fully online with expert supervision.</p>
+          <p class="text-sm font-medium text-white mt-4">From £6,500 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+        <a href="/programmes/research-training/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-training">Training</span>
+            <span class="tag tag-training">Modular</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Research Training Programme</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">Methodology, analytics, and scholarly-writing modules for researchers at any stage of their career.</p>
+          <p class="text-sm font-medium text-white mt-4">From £1,500 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+        <a href="/programmes/mphil/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-doctoral">Doctoral</span>
+            <span class="tag tag-doctoral">Flexible</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">MPhil / SCQF Research Masters</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">A research masters with SCQF credit, ideal as a stepping-stone to PhD or as a standalone qualification.</p>
+          <p class="text-sm font-medium text-white mt-4">From £4,800 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+        <a href="/programmes/supervisor-development/" class="card group flex flex-col">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="tag tag-training">Training</span>
+            <span class="tag tag-training">Modular</span>
+          </div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-300 transition-colors">Supervisor Development Programme</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">Training and CPD for new and experienced doctoral supervisors.</p>
+          <p class="text-sm font-medium text-white mt-4">From £1,200 <span class="text-accent ml-2">Explore →</span></p>
+        </a>
+
+      </div>
+      <div class="mt-8 text-center md:hidden">
+        <a href="/programmes/" class="btn-outline">View all programmes</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- News + Events -->
+  <section class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16">
+    <!-- News -->
+    <div>
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <p class="section-label mb-2">Latest News &amp; Insights</p>
+          <h2 class="text-2xl font-bold">Fresh thinking from our team.</h2>
+        </div>
+        <a href="/news/" class="text-sm text-accent hover:text-white transition-colors">View all →</a>
+      </div>
+      <ol class="space-y-6">
+        <li>
+          <a href="/news/director-dispatch-research-worth-doing/" class="flex gap-5 group">
+            <span class="text-3xl font-bold text-border group-hover:text-accent transition-colors shrink-0 w-8">1</span>
+            <div>
+              <div class="flex gap-2 items-center mb-1">
+                <span class="text-xs text-muted">Apr 2026</span>
+                <span class="text-xs text-muted">·</span>
+                <span class="text-xs text-accent">Director's Dispatch</span>
+              </div>
+              <h3 class="text-base font-medium group-hover:text-blue-300 transition-colors">What management research is actually worth doing in 2026</h3>
+              <p class="text-sm text-muted-light mt-1">By Prof. Stanley Oliver</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/news/executive-research-emerging-trends/" class="flex gap-5 group">
+            <span class="text-3xl font-bold text-border group-hover:text-accent transition-colors shrink-0 w-8">2</span>
+            <div>
+              <div class="flex gap-2 items-center mb-1">
+                <span class="text-xs text-muted">Apr 2026</span>
+                <span class="text-xs text-muted">·</span>
+                <span class="text-xs text-accent">Insights</span>
+              </div>
+              <h3 class="text-base font-medium group-hover:text-blue-300 transition-colors">Executive Research: Emerging Trends Shaping Doctoral Inquiry in 2026</h3>
+              <p class="text-sm text-muted-light mt-1">By Prof. Stanley Oliver</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="/news/emerging-management-research-areas/" class="flex gap-5 group">
+            <span class="text-3xl font-bold text-border group-hover:text-accent transition-colors shrink-0 w-8">3</span>
+            <div>
+              <div class="flex gap-2 items-center mb-1">
+                <span class="text-xs text-muted">Apr 2026</span>
+                <span class="text-xs text-muted">·</span>
+                <span class="text-xs text-accent">Research</span>
+              </div>
+              <h3 class="text-base font-medium group-hover:text-blue-300 transition-colors">Seven Emerging Management Research Areas Our Supervisors Are Watching</h3>
+              <p class="text-sm text-muted-light mt-1">By Dr. Paul Oliver</p>
+            </div>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Events -->
+    <div>
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <p class="section-label mb-2">Upcoming Events</p>
+          <h2 class="text-2xl font-bold">Join us this year.</h2>
+        </div>
+        <a href="/symposium/" class="text-sm text-accent hover:text-white transition-colors">View all →</a>
+      </div>
+      <div class="space-y-5">
+        <div class="card">
+          <p class="text-xs text-accent font-medium mb-2">20 May 2026</p>
+          <h3 class="font-semibold mb-1">Supervisor Development Workshop</h3>
+          <p class="text-xs text-muted-light mb-3">Workshop · Online</p>
+          <p class="text-sm text-muted-light">Intensive one-day workshop for new doctoral supervisors.</p>
+        </div>
+        <div class="card">
+          <p class="text-xs text-accent font-medium mb-2">10 June 2026</p>
+          <h3 class="font-semibold mb-1">Research Methods Webinar Series</h3>
+          <p class="text-xs text-muted-light mb-3">Webinar · Online</p>
+          <p class="text-sm text-muted-light">Monthly webinars on qualitative and quantitative methods.</p>
+        </div>
+        <div class="card">
+          <p class="text-xs text-accent font-medium mb-2">15 September 2026</p>
+          <h3 class="font-semibold mb-1">Annual Doctoral Symposium 2026</h3>
+          <p class="text-xs text-muted-light mb-3">Symposium · Online &amp; London</p>
+          <p class="text-sm text-muted-light">Three days of keynotes, panels, and workshops for doctoral researchers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supervisors -->
+  <section class="border-t border-border bg-surface/20">
+    <div class="max-w-7xl mx-auto px-6 py-24">
+      <div class="flex items-end justify-between mb-12">
+        <div>
+          <p class="section-label mb-3">Meet the supervisors</p>
+          <h2 class="text-3xl md:text-4xl font-bold max-w-lg">Supervision is the single biggest determinant of a good doctorate.</h2>
+        </div>
+        <a href="/supervisors/" class="text-sm text-accent hover:text-white transition-colors hidden md:block">Browse all supervisors →</a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <a href="/supervisors/stanley-oliver/" class="card group">
+          <div class="w-12 h-12 rounded-full bg-blue-900/60 flex items-center justify-center text-lg font-bold text-blue-300 mb-4">SO</div>
+          <h3 class="font-semibold group-hover:text-blue-300 transition-colors">Prof. Stanley Oliver</h3>
+          <p class="text-sm text-muted-light mt-1">Director, Doctoral College</p>
+          <p class="text-xs text-muted mt-3">mixed · 6 researchers</p>
+          <p class="text-sm text-accent mt-3">Read profile →</p>
+        </a>
+
+        <a href="/supervisors/zahra-salimi/" class="card group">
+          <div class="w-12 h-12 rounded-full bg-violet-900/60 flex items-center justify-center text-lg font-bold text-violet-300 mb-4">ZS</div>
+          <h3 class="font-semibold group-hover:text-blue-300 transition-colors">Dr. Zahra Salimi</h3>
+          <p class="text-sm text-muted-light mt-1">Director of Doctoral Studies</p>
+          <p class="text-xs text-muted mt-3">qualitative · 4 researchers</p>
+          <p class="text-sm text-accent mt-3">Read profile →</p>
+        </a>
+
+        <a href="/supervisors/paul-oliver/" class="card group">
+          <div class="w-12 h-12 rounded-full bg-blue-900/60 flex items-center justify-center text-lg font-bold text-blue-300 mb-4">PO</div>
+          <h3 class="font-semibold group-hover:text-blue-300 transition-colors">Dr. Paul Oliver</h3>
+          <p class="text-sm text-muted-light mt-1">Head of Research</p>
+          <p class="text-xs text-muted mt-3">mixed · 5 researchers</p>
+          <p class="text-sm text-accent mt-3">Read profile →</p>
+        </a>
+
+        <a href="/supervisors/liz-blower/" class="card group">
+          <div class="w-12 h-12 rounded-full bg-teal-900/60 flex items-center justify-center text-lg font-bold text-teal-300 mb-4">LB</div>
+          <h3 class="font-semibold group-hover:text-blue-300 transition-colors">Dr. Liz Blower</h3>
+          <p class="text-sm text-muted-light mt-1">Director of Student Experience</p>
+          <p class="text-xs text-muted mt-3">qualitative · 3 researchers</p>
+          <p class="text-sm text-accent mt-3">Read profile →</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-3 gap-6">
+    <div class="card text-center">
+      <h3 class="text-lg font-semibold mb-2">Apply</h3>
+      <p class="text-sm text-muted-light mb-5">Begin your doctoral journey with a flexible pathway built for working researchers.</p>
+      <a href="/apply/" class="btn-primary">Start Application</a>
+    </div>
+    <div class="card text-center">
+      <h3 class="text-lg font-semibold mb-2">Partner</h3>
+      <p class="text-sm text-muted-light mb-5">Collaborate on research, consultancy, and supervisor training with the DCUK network.</p>
+      <a href="/research/consultancy/" class="btn-outline">Explore Partnerships</a>
+    </div>
+    <div class="card text-center">
+      <h3 class="text-lg font-semibold mb-2">Attend</h3>
+      <p class="text-sm text-muted-light mb-5">Join the annual Symposium, researcher seminars, and supervisor workshops.</p>
+      <a href="/symposium/" class="btn-outline">See Events</a>
+    </div>
+  </section>
+
+</Layout>

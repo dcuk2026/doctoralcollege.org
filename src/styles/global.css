@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-bg text-white font-sans antialiased;
+  }
+  a {
+    @apply transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-sm text-muted-light hover:text-white transition-colors duration-200;
+  }
+  .btn-primary {
+    @apply inline-block bg-accent hover:bg-accent-hover text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors duration-200;
+  }
+  .btn-outline {
+    @apply inline-block border border-border hover:border-accent text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors duration-200;
+  }
+  .section-label {
+    @apply text-xs uppercase tracking-widest text-accent font-semibold;
+  }
+  .card {
+    @apply bg-surface border border-border rounded-xl p-6 hover:border-accent/40 transition-colors duration-200;
+  }
+  .tag {
+    @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full;
+  }
+  .tag-doctoral {
+    @apply bg-blue-900/40 text-blue-300 border border-blue-800/50;
+  }
+  .tag-training {
+    @apply bg-violet-900/40 text-violet-300 border border-violet-800/50;
+  }
+  .prose-dark {
+    @apply text-muted-light leading-relaxed;
+  }
+  .prose-dark p {
+    @apply mb-4;
+  }
+  .prose-dark h2 {
+    @apply text-2xl font-semibold text-white mb-4 mt-8;
+  }
+  .prose-dark h3 {
+    @apply text-xl font-medium text-white mb-3 mt-6;
+  }
+  .prose-dark ul {
+    @apply list-disc list-inside mb-4 space-y-1;
+  }
+}
+
+/* Dropdown nav */
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  background: #0c1526;
+  border: 1px solid #1e2d4a;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  z-index: 100;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown {
+  display: block;
+}
+.nav-dropdown a {
+  display: block;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  transition: background 0.15s, color 0.15s;
+}
+.nav-dropdown a:hover {
+  background: rgba(59,130,246,0.1);
+  color: white;
+}
+.nav-dropdown a span {
+  display: block;
+  font-size: 0.75rem;
+  color: #475569;
+  margin-top: 1px;
+}
+
+/* Counter animation */
+.counter { font-variant-numeric: tabular-nums; }
+
+/* Mobile menu */
+#mobile-menu { display: none; }
+#mobile-menu.open { display: block; }

@@ -1,0 +1,119 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const themes = [
+  {
+    title: "Business Management",
+    description: "Strategic management, organisational performance, leadership effectiveness, and managerial decision-making in private and public sector contexts. Includes work on business models, competitive strategy, and the management of complex organisations.",
+    tags: ["Strategy", "Leadership", "Performance"]
+  },
+  {
+    title: "Education Leadership",
+    description: "Leadership in schools, further education, higher education, and educational systems. Covers policy implementation, institutional governance, distributed leadership, and the professional development of educational leaders.",
+    tags: ["Schools", "HE/FE", "Policy"]
+  },
+  {
+    title: "Organisational Behaviour",
+    description: "The study of how individuals, teams, and structures within organisations behave and interact. Includes motivation, group dynamics, organisational culture, power, and the psychological dimensions of work.",
+    tags: ["Culture", "Teams", "Psychology"]
+  },
+  {
+    title: "Innovation & Technology",
+    description: "Innovation management, technology adoption, digital transformation, and the management of R&D. Includes research on responsible innovation, open innovation, and the leadership challenges of managing technological change.",
+    tags: ["Digital", "R&D", "Transformation"]
+  },
+  {
+    title: "Sustainability",
+    description: "Environmental sustainability, climate-resilient leadership, corporate social responsibility, and the integration of sustainability into organisational strategy. Includes research on the social and governance dimensions of ESG.",
+    tags: ["ESG", "Climate", "CSR"]
+  },
+  {
+    title: "Digital Transformation",
+    description: "The management and leadership of digital change — covering technology adoption, digital business models, AI integration, data governance, and the human and organisational dimensions of digitisation.",
+    tags: ["AI", "Data", "Change"]
+  },
+  {
+    title: "Healthcare Management",
+    description: "Management and leadership in healthcare systems, including NHS Trusts, primary care, social care, and integrated care organisations. Covers quality improvement, clinical governance, patient experience, and workforce management.",
+    tags: ["NHS", "Quality", "Clinical"]
+  },
+  {
+    title: "Public Sector",
+    description: "Management in local government, central government, public services, and third sector organisations. Research addresses accountability, performance management, public value, and the governance of public institutions.",
+    tags: ["Government", "Public value", "Accountability"]
+  },
+  {
+    title: "Entrepreneurship",
+    description: "New venture creation, growth entrepreneurship, social enterprise, and the management challenges facing founders and owner-managers. Includes research on entrepreneurial cognition, funding, and the scaling of entrepreneurial organisations.",
+    tags: ["Start-ups", "Growth", "Social enterprise"]
+  },
+  {
+    title: "Human Resources",
+    description: "Strategic HRM, talent management, workforce planning, employee relations, diversity and inclusion, and the management of people in complex organisational contexts. Connects HRM theory to professional practice.",
+    tags: ["Talent", "DEI", "Workforce"]
+  },
+  {
+    title: "Business Ethics",
+    description: "Ethical decision-making in organisations, corporate governance, responsible business, professional ethics, and the management of ethical dilemmas. Includes research on whistleblowing, compliance culture, and moral leadership.",
+    tags: ["Governance", "Compliance", "Responsibility"]
+  },
+  {
+    title: "Knowledge Management",
+    description: "Organisational learning, knowledge transfer, communities of practice, tacit knowledge retention, and the management of expertise in professional and knowledge-intensive organisations.",
+    tags: ["Learning", "Communities", "Expertise"]
+  }
+];
+---
+
+<Layout title="Research Themes | Doctoral College UK" description="Twelve research themes at DCUK — the areas in which our supervisors hold expertise and our doctoral researchers are generating new knowledge.">
+
+  <!-- Hero -->
+  <section class="bg-surface border-b border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="section-label mb-4">Research</p>
+      <h1 class="text-4xl font-bold mb-6">Research Themes</h1>
+      <p class="text-lg text-muted max-w-2xl mx-auto">DCUK doctoral research is organised around twelve themes. These themes reflect the expertise of our supervisors and the research interests of our doctoral community. Most researchers work across two or more themes.</p>
+    </div>
+  </section>
+
+  <!-- Themes Grid -->
+  <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {themes.map((theme) => (
+          <div class="card">
+            <h2 class="text-lg font-bold mb-3">{theme.title}</h2>
+            <p class="text-muted text-sm mb-4">{theme.description}</p>
+            <div class="flex flex-wrap gap-2">
+              {theme.tags.map((tag) => (
+                <span class="tag tag-training">{tag}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Note on themes -->
+  <section class="bg-surface border-y border-border py-12 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Don't see your area?</h2>
+      <p class="text-muted mb-6">These themes represent our current supervisory expertise and research community. If your research interest sits at the edge of or between these themes, please get in touch. We welcome interdisciplinary research and are happy to discuss whether your area of interest is one we can support.</p>
+      <a href="/connect" class="btn-primary">Discuss your research</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Ready to explore?</h2>
+      <p class="text-muted mb-8">Browse our current theses, meet our supervisors, or take a look at the publications emerging from the DCUK research community.</p>
+      <div class="flex gap-4 justify-center flex-wrap">
+        <a href="/research/current" class="btn-primary">Current theses</a>
+        <a href="/supervisors" class="btn-outline">Meet supervisors</a>
+      </div>
+    </div>
+  </section>
+
+</Layout>
