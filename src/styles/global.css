@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-bg text-white font-sans antialiased;
+    @apply bg-bg text-gray-900 font-sans antialiased;
   }
   a {
     @apply transition-colors duration-200;
@@ -17,28 +17,28 @@
 
 @layer components {
   .nav-link {
-    @apply text-sm text-muted-light hover:text-white transition-colors duration-200;
+    @apply text-sm text-muted-light hover:text-gray-900 transition-colors duration-200;
   }
   .btn-primary {
     @apply inline-block bg-accent hover:bg-accent-hover text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors duration-200;
   }
   .btn-outline {
-    @apply inline-block border border-border hover:border-accent text-white text-sm font-medium px-5 py-2.5 rounded-md transition-colors duration-200;
+    @apply inline-block border border-border hover:border-accent text-gray-700 hover:text-accent text-sm font-medium px-5 py-2.5 rounded-md transition-colors duration-200;
   }
   .section-label {
     @apply text-xs uppercase tracking-widest text-accent font-semibold;
   }
   .card {
-    @apply bg-surface border border-border rounded-xl p-6 hover:border-accent/40 transition-colors duration-200;
+    @apply bg-white border border-border rounded-xl p-6 hover:border-accent/40 hover:shadow-sm transition-all duration-200;
   }
   .tag {
     @apply inline-block text-xs font-medium px-2.5 py-1 rounded-full;
   }
   .tag-doctoral {
-    @apply bg-blue-900/40 text-blue-300 border border-blue-800/50;
+    @apply bg-blue-100 text-blue-700 border border-blue-200;
   }
   .tag-training {
-    @apply bg-violet-900/40 text-violet-300 border border-violet-800/50;
+    @apply bg-violet-100 text-violet-700 border border-violet-200;
   }
   .prose-dark {
     @apply text-muted-light leading-relaxed;
@@ -47,10 +47,10 @@
     @apply mb-4;
   }
   .prose-dark h2 {
-    @apply text-2xl font-semibold text-white mb-4 mt-8;
+    @apply text-2xl font-semibold text-gray-900 mb-4 mt-8;
   }
   .prose-dark h3 {
-    @apply text-xl font-medium text-white mb-3 mt-6;
+    @apply text-xl font-medium text-gray-900 mb-3 mt-6;
   }
   .prose-dark ul {
     @apply list-disc list-inside mb-4 space-y-1;
@@ -65,12 +65,12 @@
   left: 50%;
   transform: translateX(-50%);
   min-width: 280px;
-  background: #0c1526;
-  border: 1px solid #1e2d4a;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 0.75rem;
   padding: 0.75rem;
   z-index: 100;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.1);
 }
 .nav-item:hover .nav-dropdown,
 .nav-item:focus-within .nav-dropdown {
@@ -80,18 +80,18 @@
   display: block;
   padding: 0.6rem 0.75rem;
   border-radius: 0.5rem;
-  color: #94a3b8;
+  color: #475569;
   font-size: 0.875rem;
   transition: background 0.15s, color 0.15s;
 }
 .nav-dropdown a:hover {
-  background: rgba(59,130,246,0.1);
-  color: white;
+  background: rgba(37,99,235,0.08);
+  color: #1e293b;
 }
 .nav-dropdown a span {
   display: block;
   font-size: 0.75rem;
-  color: #475569;
+  color: #94a3b8;
   margin-top: 1px;
 }
 

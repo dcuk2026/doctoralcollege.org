@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        bg: '#030712',
-        surface: '#0c1526',
-        'surface-2': '#111827',
-        border: '#1e2d4a',
-        accent: '#3b82f6',
-        'accent-hover': '#2563eb',
+        bg: '#ffffff',
+        surface: '#f8fafc',
+        'surface-2': '#f1f5f9',
+        border: '#e2e8f0',
+        accent: '#2563eb',
+        'accent-hover': '#1d4ed8',
         muted: '#64748b',
-        'muted-light': '#94a3b8',
+        'muted-light': '#475569',
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
