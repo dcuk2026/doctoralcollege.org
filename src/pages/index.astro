@@ -8,29 +8,83 @@ import Layout from '../layouts/Layout.astro';
     <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white pointer-events-none"></div>
     <div class="absolute top-1/3 right-0 w-96 h-96 bg-blue-200/40 rounded-full blur-3xl pointer-events-none"></div>
     <div class="max-w-7xl mx-auto w-full relative z-10">
-      <p class="section-label mb-6">Doctoral College UK</p>
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-3xl mb-6 text-gray-900">
-        Shaping the future of doctoral <em class="italic font-light text-blue-600 not-italic">learning</em>
-      </h1>
-      <p class="text-lg text-muted-light max-w-xl mb-10 leading-relaxed">
-        A research environment for working scholars — flexible doctoral programmes, world-class supervision, and industry-connected innovation.
-      </p>
-      <div class="flex flex-wrap gap-4">
-        <a href="/programmes/" class="btn-primary text-base px-7 py-3">Explore Programmes</a>
-        <a href="#story-video" class="btn-outline text-base px-7 py-3">Watch Our Story</a>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left: text -->
+        <div>
+          <p class="section-label mb-6">Doctoral College UK</p>
+          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-gray-900">
+            Shaping the future of doctoral <em class="italic font-light text-blue-600 not-italic">learning</em>
+          </h1>
+          <p class="text-lg text-muted-light max-w-xl mb-10 leading-relaxed">
+            A research environment for working scholars — flexible doctoral programmes, world-class supervision, and industry-connected innovation.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/programmes/" class="btn-primary text-base px-7 py-3">Explore Programmes</a>
+            <button onclick="document.getElementById('story-modal').classList.remove('hidden')" class="btn-outline text-base px-7 py-3">Our Story</button>
+          </div>
+        </div>
+        <!-- Right: image -->
+        <div class="hidden lg:block">
+          <img
+            src="/MINE Pitt Head and Houses.jpg"
+            alt="Mine Pit Head and Houses"
+            class="rounded-2xl shadow-2xl w-full object-cover max-h-[520px]"
+          />
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- Story Modal -->
+  <div id="story-modal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="if(event.target===this)this.classList.add('hidden')">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden">
+      <!-- Header -->
+      <div class="bg-[#1e3a6e] px-8 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img src="/logo.png" alt="Doctoral College UK" class="h-10 w-auto brightness-0 invert" />
+        </div>
+        <button onclick="document.getElementById('story-modal').classList.add('hidden')" class="text-white/70 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <!-- Content -->
+      <div class="px-8 py-8">
+        <h2 class="text-2xl font-bold text-gray-900 mb-2">Our Story</h2>
+        <p class="text-accent font-medium text-sm mb-6">Shaping the future of doctoral learning</p>
+        <div class="grid grid-cols-2 gap-6 mb-6">
+          <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+            <p class="text-3xl font-bold text-[#1e3a6e]">2020</p>
+            <p class="text-sm text-gray-600 mt-1">Founded with a single conviction: that the most important research questions are held by practitioners already working in the field.</p>
+          </div>
+          <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+            <p class="text-3xl font-bold text-[#1e3a6e]">40+</p>
+            <p class="text-sm text-gray-600 mt-1">Doctoral candidates across business, education, health, and public service — all working professionals.</p>
+          </div>
+          <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+            <p class="text-3xl font-bold text-[#1e3a6e]">10+</p>
+            <p class="text-sm text-gray-600 mt-1">Countries represented in our researcher community, spanning the UK, Middle East, Africa, and beyond.</p>
+          </div>
+          <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
+            <p class="text-3xl font-bold text-[#1e3a6e]">97%</p>
+            <p class="text-sm text-gray-600 mt-1">Candidate satisfaction — built on rigorous supervision, flexible delivery, and genuine academic community.</p>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600 leading-relaxed">Doctoral College UK was established to serve a generation of senior professionals who want to generate original knowledge from within their practice. We offer flexible doctoral programmes, world-class supervision, and a research environment built around the realities of professional life.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="/about/" class="btn-primary text-sm">Learn More About Us</a>
+          <a href="/apply/" class="btn-outline text-sm">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Stats -->
   <section class="border-y border-border bg-surface" id="stats">
     <div class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
       <div class="text-center">
-        <p class="text-4xl md:text-5xl font-bold counter text-gray-900" data-target="250" data-suffix="+">0+</p>
+        <p class="text-4xl md:text-5xl font-bold counter text-gray-900" data-target="40" data-suffix="+">0+</p>
         <p class="text-sm text-muted-light mt-2">PhDs</p>
       </div>
       <div class="text-center">
-        <p class="text-4xl md:text-5xl font-bold counter text-gray-900" data-target="42" data-suffix="+">0+</p>
+        <p class="text-4xl md:text-5xl font-bold counter text-gray-900" data-target="10" data-suffix="+">0+</p>
         <p class="text-sm text-muted-light mt-2">Countries</p>
       </div>
       <div class="text-center">
@@ -95,7 +149,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Doctor of Business Administration (DBA)</h3>
           <p class="text-sm text-muted-light leading-relaxed flex-1">A practice-based doctorate for senior professionals applying research to their organisations.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £8,500 <span class="text-accent ml-2">Explore →</span></p>
+          <p class="text-sm font-medium text-gray-900 mt-4">Fees £10,000 <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
         <a href="/programmes/edd/" class="card group flex flex-col">
@@ -105,7 +159,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Doctor of Education (EdD)</h3>
           <p class="text-sm text-muted-light leading-relaxed flex-1">A professional doctorate for educators and educational leaders.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £7,500 <span class="text-accent ml-2">Explore →</span></p>
+          <p class="text-sm font-medium text-gray-900 mt-4">Fees £10,000 <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
         <a href="/programmes/online-phd/" class="card group flex flex-col">
@@ -113,9 +167,9 @@ import Layout from '../layouts/Layout.astro';
             <span class="tag tag-doctoral">Doctoral</span>
             <span class="tag tag-doctoral">Online</span>
           </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Online PhD Programme</h3>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Doctor of Philosophy (PhD)</h3>
           <p class="text-sm text-muted-light leading-relaxed flex-1">A flexible doctoral pathway for working professionals, fully online with expert supervision.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £6,500 <span class="text-accent ml-2">Explore →</span></p>
+          <p class="text-sm font-medium text-gray-900 mt-4">Fees £10,000 <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
         <a href="/programmes/research-training/" class="card group flex flex-col">
@@ -125,7 +179,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Research Training Programme</h3>
           <p class="text-sm text-muted-light leading-relaxed flex-1">Methodology, analytics, and scholarly-writing modules for researchers at any stage of their career.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £1,500 <span class="text-accent ml-2">Explore →</span></p>
+          <p class="text-sm font-medium text-gray-900 mt-4">£600 per Unit <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
         <a href="/programmes/mphil/" class="card group flex flex-col">
@@ -133,9 +187,9 @@ import Layout from '../layouts/Layout.astro';
             <span class="tag tag-doctoral">Doctoral</span>
             <span class="tag tag-doctoral">Flexible</span>
           </div>
-          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">MPhil / SCQF Research Masters</h3>
-          <p class="text-sm text-muted-light leading-relaxed flex-1">A research masters with SCQF credit, ideal as a stepping-stone to PhD or as a standalone qualification.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £4,800 <span class="text-accent ml-2">Explore →</span></p>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Extended Advanced Diploma (SCQF)</h3>
+          <p class="text-sm text-muted-light leading-relaxed flex-1">A post graduate qualification with SCQF credit, ideal as a stepping-stone to PhD or as a standalone qualification.</p>
+          <p class="text-sm font-medium text-gray-900 mt-4">Fees £10,000 <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
         <a href="/programmes/supervisor-development/" class="card group flex flex-col">
@@ -145,7 +199,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
           <h3 class="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors">Supervisor Development Programme</h3>
           <p class="text-sm text-muted-light leading-relaxed flex-1">Training and CPD for new and experienced doctoral supervisors.</p>
-          <p class="text-sm font-medium text-gray-900 mt-4">From £1,200 <span class="text-accent ml-2">Explore →</span></p>
+          <p class="text-sm font-medium text-gray-900 mt-4">Fees £1,200 <span class="text-accent ml-2">Explore →</span></p>
         </a>
 
       </div>
@@ -191,7 +245,7 @@ import Layout from '../layouts/Layout.astro';
                 <span class="text-xs text-accent">Insights</span>
               </div>
               <h3 class="text-base font-medium group-hover:text-blue-600 transition-colors">Executive Research: Emerging Trends Shaping Doctoral Inquiry in 2026</h3>
-              <p class="text-sm text-muted-light mt-1">By Prof. Stanley Oliver</p>
+              <p class="text-sm text-muted-light mt-1">By Dr Zahra Salimi</p>
             </div>
           </a>
         </li>
@@ -205,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
                 <span class="text-xs text-accent">Research</span>
               </div>
               <h3 class="text-base font-medium group-hover:text-blue-600 transition-colors">Seven Emerging Management Research Areas Our Supervisors Are Watching</h3>
-              <p class="text-sm text-muted-light mt-1">By Dr. Paul Oliver</p>
+              <p class="text-sm text-muted-light mt-1">By Dr Elizabeth Blower</p>
             </div>
           </a>
         </li>
@@ -223,21 +277,21 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="space-y-5">
         <div class="card">
-          <p class="text-xs text-accent font-medium mb-2">20 May 2026</p>
+          <p class="text-xs text-accent font-medium mb-2">5 September 2026</p>
           <h3 class="font-semibold mb-1">Supervisor Development Workshop</h3>
-          <p class="text-xs text-muted-light mb-3">Workshop · Online</p>
+          <p class="text-xs text-muted-light mb-3">Workshop · Fully Online</p>
           <p class="text-sm text-muted-light">Intensive one-day workshop for new doctoral supervisors.</p>
         </div>
         <div class="card">
-          <p class="text-xs text-accent font-medium mb-2">10 June 2026</p>
+          <p class="text-xs text-accent font-medium mb-2">19 September 2026</p>
           <h3 class="font-semibold mb-1">Research Methods Webinar Series</h3>
-          <p class="text-xs text-muted-light mb-3">Webinar · Online</p>
+          <p class="text-xs text-muted-light mb-3">Webinar · Fully Online</p>
           <p class="text-sm text-muted-light">Monthly webinars on qualitative and quantitative methods.</p>
         </div>
         <div class="card">
-          <p class="text-xs text-accent font-medium mb-2">15 September 2026</p>
+          <p class="text-xs text-accent font-medium mb-2">27–29 October 2026</p>
           <h3 class="font-semibold mb-1">Annual Doctoral Symposium 2026</h3>
-          <p class="text-xs text-muted-light mb-3">Symposium · Online &amp; London</p>
+          <p class="text-xs text-muted-light mb-3">Symposium · Online &amp; Newcastle upon Tyne</p>
           <p class="text-sm text-muted-light">Three days of keynotes, panels, and workshops for doctoral researchers.</p>
         </div>
       </div>
@@ -259,32 +313,32 @@ import Layout from '../layouts/Layout.astro';
         <a href="/supervisors/stanley-oliver/" class="card group">
           <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-lg font-bold text-blue-600 mb-4">SO</div>
           <h3 class="font-semibold group-hover:text-blue-600 transition-colors">Prof. Stanley Oliver</h3>
-          <p class="text-sm text-muted-light mt-1">Director, Doctoral College</p>
-          <p class="text-xs text-muted mt-3">mixed · 6 researchers</p>
+          <p class="text-sm text-muted-light mt-1">Principal, Doctoral College UK</p>
+          <p class="text-xs text-muted mt-3">mixed · 8 researchers</p>
           <p class="text-sm text-accent mt-3">Read profile →</p>
         </a>
 
         <a href="/supervisors/zahra-salimi/" class="card group">
           <div class="w-12 h-12 rounded-full bg-violet-100 flex items-center justify-center text-lg font-bold text-violet-600 mb-4">ZS</div>
           <h3 class="font-semibold group-hover:text-blue-600 transition-colors">Dr. Zahra Salimi</h3>
-          <p class="text-sm text-muted-light mt-1">Director of Doctoral Studies</p>
-          <p class="text-xs text-muted mt-3">qualitative · 4 researchers</p>
+          <p class="text-sm text-muted-light mt-1">Academic Lead for Research & Enterprise</p>
+          <p class="text-xs text-muted mt-3">mixed · 8 researchers</p>
           <p class="text-sm text-accent mt-3">Read profile →</p>
         </a>
 
-        <a href="/supervisors/paul-oliver/" class="card group">
-          <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-lg font-bold text-blue-600 mb-4">PO</div>
-          <h3 class="font-semibold group-hover:text-blue-600 transition-colors">Dr. Paul Oliver</h3>
-          <p class="text-sm text-muted-light mt-1">Head of Research</p>
-          <p class="text-xs text-muted mt-3">mixed · 5 researchers</p>
-          <p class="text-sm text-accent mt-3">Read profile →</p>
-        </a>
-
-        <a href="/supervisors/liz-blower/" class="card group">
+<a href="/supervisors/liz-blower/" class="card group">
           <div class="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center text-lg font-bold text-teal-600 mb-4">LB</div>
           <h3 class="font-semibold group-hover:text-blue-600 transition-colors">Dr. Liz Blower</h3>
-          <p class="text-sm text-muted-light mt-1">Director of Student Experience</p>
-          <p class="text-xs text-muted mt-3">qualitative · 3 researchers</p>
+          <p class="text-sm text-muted-light mt-1">Academic Lead for Operations</p>
+          <p class="text-xs text-muted mt-3">qualitative · 8 researchers</p>
+          <p class="text-sm text-accent mt-3">Read profile →</p>
+        </a>
+
+        <a href="/supervisors/adjunct-faculty/" class="card group">
+          <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center text-lg font-bold text-gray-600 mb-4">AF</div>
+          <h3 class="font-semibold group-hover:text-blue-600 transition-colors">Adjunct Faculty</h3>
+          <p class="text-sm text-muted-light mt-1">Experienced Supervisors</p>
+          <p class="text-xs text-muted mt-3">mixed · 20+ researchers</p>
           <p class="text-sm text-accent mt-3">Read profile →</p>
         </a>
 
