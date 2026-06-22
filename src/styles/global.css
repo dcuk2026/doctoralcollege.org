@@ -72,8 +72,7 @@
   z-index: 100;
   box-shadow: 0 20px 60px rgba(0,0,0,0.1);
 }
-.nav-item:hover .nav-dropdown,
-.nav-item:focus-within .nav-dropdown {
+.nav-item:hover .nav-dropdown {
   display: block;
 }
 .nav-dropdown a {
