@@ -56,40 +56,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
         <a href="/" class="nav-link">Home</a>
         <a href="/about/" class="nav-link">About</a>
 
-        <!-- Programmes dropdown -->
-        <div class="nav-item relative">
-          <button class="nav-link flex items-center gap-1">
-            Programmes
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
-          </button>
-          <div class="nav-dropdown">
-            <a href="/programmes/access-to-doctorate/">Access to Doctorate <span>Foundational pathway into doctoral study</span></a>
-            <a href="/programmes/mphil/">MPhil / SCQF <span>Research masters with SCQF credit</span></a>
-            <a href="/programmes/online-phd/">Online PhD <span>Flexible doctorate for working professionals</span></a>
-            <a href="/programmes/dba/">DBA <span>Doctor of Business Administration</span></a>
-            <a href="/programmes/edd/">EdD <span>Doctor of Education</span></a>
-            <a href="/programmes/research-training/">Research Training <span>Methodology and skills development</span></a>
-            <a href="/programmes/supervisor-development/">Supervisor Development <span>Training for doctoral supervisors</span></a>
-            <a href="/fees/">Fees &amp; Funding <span>Every number upfront</span></a>
-          </div>
-        </div>
-
-        <!-- Research dropdown -->
-        <div class="nav-item relative">
-          <button class="nav-link flex items-center gap-1">
-            Research
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M2 4l4 4 4-4"/></svg>
-          </button>
-          <div class="nav-dropdown">
-            <a href="/research/strategy/">Strategy <span>Our research vision and priorities</span></a>
-            <a href="/research/themes/">Themes <span>Twelve themed research areas</span></a>
-            <a href="/research/current/">Research underway <span>Theses in progress across the college</span></a>
-            <a href="/supervisors/">Supervisors <span>Find the right supervisor for your research</span></a>
-            <a href="/research/publications/">Publications <span>Archive of papers and reports</span></a>
-            <a href="/research/case-studies/">Case Studies <span>Industry impact in practice</span></a>
-            <a href="/research/consultancy/">Consultancy <span>Commissioned research services</span></a>
-          </div>
-        </div>
+        <a href="/programmes/" class="nav-link">Programmes</a>
+        <a href="/research/strategy/" class="nav-link">Research</a>
 
         <a href="/symposium/" class="nav-link">Symposium</a>
         <a href="/experience/" class="nav-link">Experience</a>
