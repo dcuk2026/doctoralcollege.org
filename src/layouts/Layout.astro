@@ -124,13 +124,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
         <!-- Brand -->
         <div class="lg:col-span-2">
-          <a href="/" class="flex items-center gap-2.5 mb-4">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="28" height="28" rx="6" fill="#3b82f6"/>
-              <path d="M7 8h7a7 7 0 0 1 0 14H7V8z" fill="white" opacity="0.9"/>
-              <circle cx="19" cy="10" r="3" fill="white" opacity="0.5"/>
-            </svg>
-            <span class="text-sm font-semibold text-gray-900">Doctoral College UK</span>
+          <a href="/" class="inline-block mb-4">
+            <img src="/logo-v2.png" alt="Doctoral College UK" class="h-20 w-auto" />
           </a>
           <p class="text-sm text-muted-light leading-relaxed max-w-xs">Forward-thinking doctoral education, supervisor training, and research innovation in business and management.</p>
           <div class="flex gap-4 mt-6">
