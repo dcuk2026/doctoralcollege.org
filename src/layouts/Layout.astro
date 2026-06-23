@@ -97,7 +97,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
     </div>
   </header>
 
-  <main id="main-content" class="pt-20">
+  <!-- Sub-header banner -->
+  <div class="pt-16 w-full">
+    <img src="/dcuk-banner.png" alt="Doctoral College UK — Advancing Knowledge, Developing Researchers, Creating Impact" class="w-full h-auto block" />
+  </div>
+
+  <main id="main-content">
     <slot />
   </main>
 
