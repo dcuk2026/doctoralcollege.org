@@ -1,13 +1,71 @@
-﻿---
+---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="VLE" description="Virtual Learning Environment — Brenkley Doctoral College.">
-  <section class="relative overflow-hidden border-b border-border">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white pointer-events-none"></div>
-    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
-      <p class="section-label mb-4">Brenkley Doctoral College</p>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 max-w-2xl">VLE</h1>
-      <p class="text-lg text-muted-light max-w-2xl leading-relaxed">Content coming soon.</p>
+
+<Layout title="VLE | Brenkley Doctoral College" description="The Virtual Learning Environment used by Brenkley Doctoral College — MoodleCloud, a fully hosted LMS delivering flexible, research-informed online learning.">
+
+  <!-- Hero -->
+  <section class="bg-surface border-b border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="section-label mb-4">Learning Environment</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">Virtual Learning Environment (VLE)</h1>
+      <p class="text-lg text-muted max-w-3xl mx-auto">The Virtual Learning Environment (VLE) used by Brenkley Doctoral College is MoodleCloud — a fully hosted, Software-as-a-Service (SaaS) version of the popular Moodle LMS.</p>
     </div>
   </section>
+
+  <!-- About MoodleCloud -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">About the Platform</p>
+      <h2 class="text-3xl font-bold mb-6">MoodleCloud</h2>
+      <p class="text-muted mb-6">Developed directly by Moodle HQ, MoodleCloud removes the burden of technical server management and IT infrastructure, allowing Brenkley Doctoral College to quickly create and deliver engaging online and blended courses.</p>
+      <p class="text-muted">As a fully hosted cloud platform, MoodleCloud combines the full power of Moodle's open-source learning management capabilities with the simplicity and reliability of a managed SaaS service — meaning researchers and supervisors can focus entirely on learning and research, not technology.</p>
+    </div>
+  </section>
+
+  <!-- Key Benefits -->
+  <section class="bg-surface border-y border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Benefits</p>
+      <h2 class="text-3xl font-bold mb-10">Key Benefits for Brenkley Doctoral College</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="card">
+          <h3 class="font-bold text-lg mb-2">Zero Infrastructure Maintenance</h3>
+          <p class="text-muted text-sm">Because it is hosted in the cloud, IT teams are not required to manage servers, perform manual software updates, or troubleshoot hosting downtimes. Brenkley Doctoral College can focus entirely on delivering excellent doctoral education.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-bold text-lg mb-2">Cost-Effective Scalability</h3>
+          <p class="text-muted text-sm">Educational institutions can avoid the high costs of purchasing enterprise hardware or maintaining on-premises data centres. Subscriptions can easily be scaled based on user limits and data storage needs.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-bold text-lg mb-2">Integrated Communication Tools</h3>
+          <p class="text-muted text-sm">Making it incredibly easy to manage content for live lectures and virtual office hours. Supervisors and researchers can communicate, share materials, and collaborate in one unified environment.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-bold text-lg mb-2">Seamless App &amp; Cloud Connectivity</h3>
+          <p class="text-muted text-sm">Integrates natively with cloud storage services like Google Drive and Dropbox, and provides full access to premium Moodle App features for on-the-go student learning — accessible from any device, anywhere.</p>
+        </div>
+
+        <div class="card md:col-span-2">
+          <h3 class="font-bold text-lg mb-2">Built-in Assessment and Grading</h3>
+          <p class="text-muted text-sm">Delivers powerful tools to measure researcher progress, deploy quizzes, manage grading, and provide timely academic feedback. All assessment activity is logged and auditable, supporting Brenkley Doctoral College's quality assurance framework.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 px-6 text-center">
+    <div class="max-w-2xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Access the VLE</h2>
+      <p class="text-muted mb-8">Current researchers and supervisors access the Brenkley Doctoral College VLE through their programme login. For technical support or access queries, please contact us.</p>
+      <a href="/connect/" class="btn-primary">Contact Us</a>
+    </div>
+  </section>
+
 </Layout>
