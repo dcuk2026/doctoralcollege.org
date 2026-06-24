@@ -1,13 +1,391 @@
-﻿---
+---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title="MyDoctorate" description="MyDoctorate — your personal doctoral journey portal at Brenkley Doctoral College.">
-  <section class="relative overflow-hidden border-b border-border">
-    <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white pointer-events-none"></div>
-    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 relative z-10">
-      <p class="section-label mb-4">Brenkley Doctoral College</p>
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4 max-w-2xl">MyDoctorate</h1>
-      <p class="text-lg text-muted-light max-w-2xl leading-relaxed">Content coming soon.</p>
+
+<Layout title="MyDoctorate | Brenkley Doctoral College" description="MyDoctorate is Brenkley Doctoral College's Global Research Community — accredited training, supervisor development, internships and community for doctoral researchers worldwide.">
+
+  <!-- Hero -->
+  <section class="bg-surface border-b border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="section-label mb-4">Global Research Community</p>
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">MyDoctorate</h1>
+      <p class="text-xl text-muted max-w-3xl mx-auto mb-4">Brenkley Doctoral College's Global Research Community</p>
+      <p class="text-lg text-muted max-w-3xl mx-auto">A single membership unlocking accredited training, supervisor development, internships and community for doctoral researchers worldwide.</p>
     </div>
   </section>
+
+  <!-- Pillars -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card text-center">
+          <h3 class="font-bold text-lg mb-2">Founders &amp; Governance</h3>
+          <p class="text-muted text-sm">Owned by Brenkley Doctoral College, operating with a transparent structure that prioritizes speed, user value, and academic integrity.</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-lg mb-2">Global Network</h3>
+          <p class="text-muted text-sm">Convening researchers, supervisors, institutions and employers into one high-trust network.</p>
+        </div>
+        <div class="card text-center">
+          <h3 class="font-bold text-lg mb-2">Quality Assured</h3>
+          <p class="text-muted text-sm">Aligned with UK standards with SCQF and a dedicated Academic Board overseeing learner outcomes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership overview -->
+  <section class="bg-surface border-y border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3 text-center">Membership</p>
+      <h2 class="text-3xl font-bold mb-4 text-center">Membership built to accelerate doctoral journeys</h2>
+      <p class="text-muted text-center mb-10 max-w-2xl mx-auto">Global membership for doctoral practice designed for every voice in the doctoral ecosystem.</p>
+      <div class="space-y-4 max-w-3xl mx-auto">
+        <div class="flex gap-4 items-start"><span class="text-accent font-bold text-lg mt-0.5">•</span><p class="text-muted">£120 annual membership grants member discounted pricing across all programmes, events and services.</p></div>
+        <div class="flex gap-4 items-start"><span class="text-accent font-bold text-lg mt-0.5">•</span><p class="text-muted">Priority access to curated cohorts, mentor office hours, internship shortlists and partnership opportunities.</p></div>
+        <div class="flex gap-4 items-start"><span class="text-accent font-bold text-lg mt-0.5">•</span><p class="text-muted">Portfolio, CPD tracker and digital credentials wallet to evidence outputs and supervisor engagement.</p></div>
+        <div class="flex gap-4 items-start"><span class="text-accent font-bold text-lg mt-0.5">•</span><p class="text-muted">Non-members participate at full price rates without preferential access or verified references.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tiered Membership -->
+  <section class="py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <p class="section-label mb-3 text-center">Tiers</p>
+      <h2 class="text-3xl font-bold mb-4 text-center">Tiered Membership Model</h2>
+      <p class="text-muted text-center mb-10 max-w-2xl mx-auto">Choose the membership level that best fits your role in the doctoral ecosystem.</p>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <div class="card">
+          <span class="tag tag-doctoral mb-3 inline-block">Tier Basic</span>
+          <h3 class="text-xl font-bold mb-1">Research Community Access</h3>
+          <p class="text-sm text-accent font-medium mb-4">Core Purpose: Pipeline building, Community engagement, Lead generation</p>
+          <h4 class="font-semibold text-sm mb-2">Key Benefits</h4>
+          <ul class="text-sm text-muted space-y-1 mb-4">
+            <li>• Community forums (read + limited post)</li>
+            <li>• Open research webinars &amp; taster workshops</li>
+            <li>• Research career pathways explorer</li>
+            <li>• Ethics, AI &amp; integrity guidance (core)</li>
+            <li>• Public research events &amp; symposia access</li>
+            <li>• Limited Open Research Portfolio (ORP)</li>
+          </ul>
+          <h4 class="font-semibold text-sm mb-2">Restrictions</h4>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• No dashboards or analytics</li>
+            <li>• No supervisor CPD accreditation</li>
+            <li>• No institutional branding</li>
+            <li>• No qualification available — pay per course for training</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="tag tag-training mb-3 inline-block">Tier Pro</span>
+          <h3 class="text-xl font-bold mb-1">Individual Research &amp; Supervision</h3>
+          <p class="text-sm text-accent font-medium mb-4">Core Purpose: Progression &amp; completion, Individual professional development, Tool-enabled research practice</p>
+          <h4 class="font-semibold text-sm mb-2">Full PRO Benefits — Researchers &amp; Supervisors</h4>
+          <ul class="text-sm text-muted space-y-1 mb-4">
+            <li>• Proposal builder, IRP, RDP</li>
+            <li>• MPD, milestone alerts</li>
+            <li>• Full ERP access</li>
+            <li>• Writing retreats, JSP</li>
+            <li>• Personal RAD</li>
+            <li>• Micro-credentials</li>
+            <li>• Peer circles</li>
+          </ul>
+          <h4 class="font-semibold text-sm mb-2">Included in Tier</h4>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Full MDOS user dashboard</li>
+            <li>• Digital Credential System (DCS)</li>
+            <li>• Research Analytics Dashboard (RAD)</li>
+            <li>• Priority research events &amp; clinics</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="tag tag-doctoral mb-3 inline-block">Tier Institutional</span>
+          <h3 class="text-xl font-bold mb-1">Doctoral Infrastructure Licence</h3>
+          <p class="text-sm text-accent font-medium mb-4">Core Purpose: Scale &amp; consistency, Quality assurance, Cost-efficient doctoral support</p>
+          <h4 class="font-semibold text-sm mb-2">Key Benefits</h4>
+          <ul class="text-sm text-muted space-y-1 mb-4">
+            <li>• Multi-user access (staff &amp; candidates)</li>
+            <li>• Branded institutional space</li>
+            <li>• Audit-ready evidence &amp; dashboards</li>
+            <li>• Bulk CPD &amp; accreditation</li>
+            <li>• Completion &amp; benchmarking metrics</li>
+            <li>• Modular DTP content</li>
+            <li>• Inter-institutional cohorts</li>
+          </ul>
+          <h4 class="font-semibold text-sm mb-2">Included in Tier</h4>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Supervisor Load Analytics (SLA-D)</li>
+            <li>• Completion &amp; Benchmarking Metrics (CBM)</li>
+            <li>• Quality Assurance – Doctoral Research (QA-DR)</li>
+            <li>• API access for LMS integration</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <span class="tag tag-training mb-3 inline-block">Tier Partner</span>
+          <h3 class="text-xl font-bold mb-1">Employer &amp; Strategic Collaboration</h3>
+          <p class="text-sm text-accent font-medium mb-4">Core Purpose: Industry-driven research, Talent development, Income &amp; impact generation</p>
+          <h4 class="font-semibold text-sm mb-2">Key Benefits</h4>
+          <ul class="text-sm text-muted space-y-1 mb-4">
+            <li>• Define industry problem statements</li>
+            <li>• Project sponsorship &amp; oversight</li>
+            <li>• Early access to doctoral researchers</li>
+            <li>• Industry + academic alignment</li>
+            <li>• Insight briefs &amp; applied outputs</li>
+            <li>• Research-Engaged Employer status</li>
+            <li>• ESG &amp; innovation dashboards</li>
+          </ul>
+          <h4 class="font-semibold text-sm mb-2">Included in Tier</h4>
+          <ul class="text-sm text-muted space-y-1">
+            <li>• Research Challenge Lab (RCL)</li>
+            <li>• Knowledge Exchange Marketplace Hub</li>
+            <li>• Employer Research Impact (ERI) reporting</li>
+            <li>• Partner co-branding &amp; case studies</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees -->
+  <section class="bg-surface border-y border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3 text-center">Pricing</p>
+      <h2 class="text-3xl font-bold mb-4 text-center">Fees &amp; Pricing Structure</h2>
+      <p class="text-muted text-center mb-10">Transparent pricing for study portfolio awards. Members enjoy significant discounts.</p>
+
+      <h3 class="text-base font-bold mb-3 uppercase tracking-wide text-gray-500">Foundation</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm border border-border rounded-xl overflow-hidden">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold">Course / Award</th>
+              <th class="text-left px-4 py-3 font-semibold">Basic Tier</th>
+              <th class="text-left px-4 py-3 font-semibold">Pro Tier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-border">
+              <td class="px-4 py-3">Access to Doctorate (SQA)</td>
+              <td class="px-4 py-3">£500</td>
+              <td class="px-4 py-3 text-accent font-medium">Free</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-base font-bold mb-3 uppercase tracking-wide text-gray-500">Doctoral Pathways (Annual Fee)</h3>
+      <div class="overflow-x-auto mb-8">
+        <table class="w-full text-sm border border-border rounded-xl overflow-hidden">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold">Course / Award</th>
+              <th class="text-left px-4 py-3 font-semibold">Basic Tier</th>
+              <th class="text-left px-4 py-3 font-semibold">Pro Tier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-border"><td class="px-4 py-3">PhD Thesis Pathway (1–3 years)</td><td class="px-4 py-3 text-muted">N/A</td><td class="px-4 py-3">£10,000</td></tr>
+            <tr class="border-t border-border bg-gray-50"><td class="px-4 py-3">PhD Publication Mentor Path (1–2 years)</td><td class="px-4 py-3 text-muted">N/A</td><td class="px-4 py-3">£10,000</td></tr>
+            <tr class="border-t border-border"><td class="px-4 py-3">PhD Publication Fast Track (1 year)</td><td class="px-4 py-3 text-muted">N/A</td><td class="px-4 py-3">£10,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="text-base font-bold mb-3 uppercase tracking-wide text-gray-500">CPD — Professional Training</h3>
+      <div class="overflow-x-auto mb-6">
+        <table class="w-full text-sm border border-border rounded-xl overflow-hidden">
+          <thead class="bg-gray-100">
+            <tr>
+              <th class="text-left px-4 py-3 font-semibold">Course / Award</th>
+              <th class="text-left px-4 py-3 font-semibold">Basic Tier</th>
+              <th class="text-left px-4 py-3 font-semibold">Pro Tier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-border"><td class="px-4 py-3">Research Training CPD</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border bg-gray-50"><td class="px-4 py-3">Management Training CPD</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border"><td class="px-4 py-3">The AI Engineer's Playbook</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border bg-gray-50"><td class="px-4 py-3">Teaching Practice Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border"><td class="px-4 py-3">PhD Supervisor Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border bg-gray-50"><td class="px-4 py-3">Research Fellowship Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border"><td class="px-4 py-3">Chartered Accountant Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border bg-gray-50"><td class="px-4 py-3">Entrepreneurship Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+            <tr class="border-t border-border"><td class="px-4 py-3">Digital Marketeer Training</td><td class="px-4 py-3">£900</td><td class="px-4 py-3 text-accent font-medium">Free</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-sm text-muted">All fees are subject to Brenkley Doctoral College Quality Assurance standards. Staged payment plans are available for annual doctoral fees (3 instalments at the start of each trimester).</p>
+    </div>
+  </section>
+
+  <!-- Higher Education Qualifications -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Qualifications</p>
+      <h2 class="text-3xl font-bold mb-6">Higher Education Qualifications</h2>
+      <p class="text-muted mb-6">For Brenkley Doctoral College, a clearly structured portfolio in postgraduate research creates a focused, coherent, sustainable, and inclusive higher education ecosystem.</p>
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Widening Participation:</strong> Enables flexible entry and exit points while building academic capability progressively.</p></div>
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Strategic Growth:</strong> Strengthens recruitment, retention, and supports international articulation (SQA/SCQF alignment).</p></div>
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Skill Development:</strong> Ensures learners develop the academic, professional, and research skills required for success.</p></div>
+      </div>
+      <p class="text-muted mb-10">Crucially, it reinforces Brenkley Doctoral College's identity as a research-led institution, creating a stable progression pipeline that benefits learners, partners, and long-term institutional sustainability.</p>
+
+      <h3 class="text-2xl font-bold mb-4">Continuing Professional Development</h3>
+      <p class="text-muted mb-4">The CPD portfolio is designed to meet the evolving needs of professionals, academics, and doctoral learners through a coherent, research-led suite of skills-based programmes.</p>
+      <div class="space-y-3 mb-4">
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Core Areas:</strong> Spanning research training, management, AI &amp; digital capability, and doctoral supervision.</p></div>
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Lifelong Learning:</strong> A focused portfolio supporting professional upskilling and academic development.</p></div>
+        <div class="flex gap-3 items-start"><span class="text-accent font-bold mt-0.5">•</span><p class="text-muted"><strong class="text-gray-900">Progression:</strong> Creates clear routes into PhD study.</p></div>
+      </div>
+      <p class="text-muted">Collectively, this strengthens Brenkley Doctoral College's professional offering and reinforces our identity as a practice-informed, research-intensive provider.</p>
+    </div>
+  </section>
+
+  <!-- Internships -->
+  <section class="bg-surface border-y border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Internships</p>
+      <h2 class="text-3xl font-bold mb-4">Internships marketplace with end-to-end assurance</h2>
+      <p class="text-muted mb-8">A curated placements engine joining doctoral talent with employers, backed by quality templates and mentor support.</p>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="card"><p class="text-muted text-sm">Curated marketplace with various placements aligned to candidate expertise and employer projects and timelines.</p></div>
+        <div class="card"><p class="text-muted text-sm">Structured learning contracts, dual-supervision model and transparent deliverables for every placement.</p></div>
+        <div class="card"><p class="text-muted text-sm">Digital credentials wallet emitting references, badges and deliverables back into the portfolio.</p></div>
+        <div class="card"><p class="text-muted text-sm">Template legal toolkit covering NDA, IP, data protection and internship agreements to de-risk adoption.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supervisors -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Supervisors</p>
+      <h2 class="text-3xl font-bold mb-8">Elevate your supervisory practice and join a global community of research-active professionals.</h2>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="card"><h4 class="font-semibold mb-2">Accredited Supervisor Training Pathways</h4><p class="text-muted text-sm">Gain access to structured, evidence-based supervisor development programmes that enhance your practice and support recognition with universities across the UK and internationally.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Community of Practice</h4><p class="text-muted text-sm">Engage with a vibrant network of peers to share insights, supervision strategies, case studies, and innovations in doctoral education.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">CPD that Works for You</h4><p class="text-muted text-sm">Access flexible online modules, webinars, workshops, and masterclasses designed to strengthen supervisory skills, research leadership, and student success.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Opportunities to Supervise PhD Candidates</h4><p class="text-muted text-sm">Connect with the Brenkley Doctoral College doctoral ecosystem and access opportunities to supervise candidates across multiple disciplines through our university partnerships.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Cutting-Edge Resources</h4><p class="text-muted text-sm">Explore an ever-growing library of toolkits, templates, guidance notes, and research-informed best practices for effective supervision.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Professional Recognition</h4><p class="text-muted text-sm">Build your supervisor portfolio, showcase achievements, and access pathways towards formal recognition as an accredited doctoral supervisor.</p></div>
+      </div>
+      <div class="card">
+        <h4 class="font-semibold mb-3">Who Is This For?</h4>
+        <ul class="text-muted text-sm space-y-1">
+          <li>• Current PhD supervisors</li>
+          <li>• Early-career academics aspiring to supervise</li>
+          <li>• Professional doctoral tutors and mentors</li>
+          <li>• Research-active practitioners in industry</li>
+          <li>• Academics seeking a supportive CPD pathway</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutions -->
+  <section class="bg-surface border-y border-border py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Institutions</p>
+      <h2 class="text-3xl font-bold mb-4">Scale Your Research Skills Provision with Confidence</h2>
+      <p class="text-muted mb-8">Empower your institution with a research development ecosystem designed for modern academia. The Brenkley Doctoral College Research Community Platform enables universities, colleges, and research organisations to deliver high-quality, scalable research skills training under the trusted quality assurance framework of Brenkley Doctoral College.</p>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="card"><h4 class="font-semibold mb-2">Quality-Assured Research Skills Provision</h4><p class="text-muted text-sm">All learning materials, development pathways, and community engagements are delivered under the established Brenkley Doctoral College Quality Assurance Framework.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Scalable, Flexible, Institution-Ready</h4><p class="text-muted text-sm">Whether you support hundreds or thousands of learners, the platform scales effortlessly across undergraduate, postgraduate, doctoral, and staff development programmes.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Rich, Multi-Layered Research Community</h4><p class="text-muted text-sm">Discussion forums, peer groups, live workshops, and shared resources create a collaborative environment that strengthens research culture.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Supervisor and Staff Development</h4><p class="text-muted text-sm">Equip supervisors and research leaders with professional development opportunities including supervisory practice, ethics, digital tools, and research management.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Seamless Integration &amp; Institutional Branding</h4><p class="text-muted text-sm">The platform supports co-branding and can integrate with institutional systems, ensuring a unified, high-quality experience.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Data, Insights, and Reporting</h4><p class="text-muted text-sm">Track engagement, progression, and outcomes with analytics that help institutions monitor quality and strengthen internal and external audit readiness.</p></div>
+      </div>
+      <div class="text-center"><a href="/connect/" class="btn-primary">Contact Our Partnership Team</a></div>
+    </div>
+  </section>
+
+  <!-- Employers -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <p class="section-label mb-3">Employers</p>
+      <h2 class="text-3xl font-bold mb-4">Brenkley Doctoral College Research Community Platform for Employers</h2>
+      <p class="text-muted mb-8">A powerful gateway to the next generation of research talent. Designed for companies, public bodies, laboratories, and innovation-driven organisations, the platform enables seamless collaboration on PhD-level internship projects, knowledge exchange, and research partnerships.</p>
+      <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="card"><h4 class="font-semibold mb-2">Access to PhD-Level Talent</h4><p class="text-muted text-sm">Connect with researchers equipped with advanced analytical, technical, and problem-solving skills. Collaborate on real-world projects that matter to your organisation.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Industry-Ready Research Collaboration</h4><p class="text-muted text-sm">Every engagement is supported by clear expectations, robust ethics, and quality assurance aligned to doctoral standards.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Solve Strategic Challenges</h4><p class="text-muted text-sm">Co-develop solutions with doctoral candidates and academic supervisors backed by Brenkley Doctoral College's structured project framework.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Flexible Internship and Project Models</h4><p class="text-muted text-sm">Host short-term placements, virtual internships, or extended research residencies tailored to your organisation's needs and innovation timelines.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Strengthen Your R&amp;D Pipeline</h4><p class="text-muted text-sm">Engage with emerging researchers early, identify future talent, and support the development of high-skill roles within your sector.</p></div>
+        <div class="card"><h4 class="font-semibold mb-2">Risk-Managed, Quality-Assured Engagement</h4><p class="text-muted text-sm">All projects are underpinned by Brenkley Doctoral College's quality assurance principles — ensuring clarity, governance, ethical compliance, and measurable outcomes.</p></div>
+      </div>
+      <div class="text-center"><a href="/connect/" class="btn-primary">Join the Platform</a></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-surface border-t border-border py-16 px-6">
+    <div class="max-w-3xl mx-auto">
+      <p class="section-label mb-3 text-center">FAQs</p>
+      <h2 class="text-3xl font-bold mb-4 text-center">Frequently Asked Questions</h2>
+      <p class="text-muted text-center mb-10">Find answers to common questions about Brenkley Doctoral College, MyDoctorate, and how we support your research journey.</p>
+      <div class="space-y-8">
+        <div>
+          <h3 class="font-bold text-lg mb-3">1. About Brenkley Doctoral College and the MyDoctorate Community</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• What is Brenkley Doctoral College?</li>
+            <li>• What is MyDoctorate?</li>
+            <li>• How is MyDoctorate different from other university environments?</li>
+            <li>• Is MyDoctorate only for people enrolled on Brenkley Doctoral College programmes?</li>
+            <li>• Is Brenkley Doctoral College a university?</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3">2. Membership &amp; Eligibility</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• Who can join the MyDoctorate community?</li>
+            <li>• How do I create an account?</li>
+            <li>• How do I upgrade, downgrade or cancel my membership?</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3">3. Using the Platform</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• What can I do on MyDoctorate as a member?</li>
+            <li>• How can I find potential collaborators?</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3">4. Research Support &amp; Learning</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• Does MyDoctorate replace my university supervisor?</li>
+            <li>• What types of resources are available on MyDoctorate?</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3">5. Data, Privacy &amp; Security</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• How is my personal data used?</li>
+            <li>• Who owns the intellectual property (IP) in the work I upload?</li>
+            <li>• What are the expectations for behaviour on the platform?</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg mb-3">6. Support &amp; Contact</h3>
+          <ul class="space-y-2 text-muted text-sm pl-4">
+            <li>• I'm having trouble logging in. What should I do?</li>
+            <li>• I've just joined. Where should I start?</li>
+            <li>• How can I contact Brenkley Doctoral College about partnerships or bespoke services?</li>
+          </ul>
+        </div>
+        <div class="card text-center">
+          <p class="text-muted mb-4">If you couldn't find the answer you were looking for, please don't hesitate to contact us.</p>
+          <a href="/connect/" class="btn-primary">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </Layout>
