@@ -36,7 +36,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-accent text-white px-4 py-2 rounded z-50">Skip to content</a>
 
   <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-white/95 backdrop-blur-md shadow-sm">
+  <header class="w-full z-50 border-b border-border bg-white shadow-sm">
     <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
       <!-- Desktop nav -->
       <div class="hidden lg:flex items-center gap-9 mr-4">
@@ -60,11 +60,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
       </div>
     </nav>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="lg:hidden border-t border-border bg-white px-6 py-4 max-h-[75vh] overflow-y-auto">
-      <div class="flex justify-between items-center mb-3">
+  </header>
+
+  <!-- Mobile menu — expands below nav bar, scrollable -->
+  <div id="mobile-menu" class="w-full z-40 lg:hidden bg-white border-t border-border shadow-xl overflow-y-auto" style="max-height:70vh;">
+    <div class="px-6 py-4">
+      <div class="flex justify-between items-center mb-3 border-b border-border pb-3">
         <span class="text-xs font-semibold uppercase tracking-wider text-gray-400">Menu</span>
-        <button id="menu-close" class="text-gray-400 hover:text-gray-900 text-2xl leading-none px-1" aria-label="Close menu">&times;</button>
+        <button id="menu-close" class="text-gray-500 hover:text-gray-900 text-3xl leading-none px-1" aria-label="Close menu">&times;</button>
       </div>
       <div class="space-y-1">
         <a href="/" class="block py-2 text-sm text-muted-light hover:text-gray-900">Home</a>
@@ -91,15 +94,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
         <a href="/connect/" class="block py-2 text-sm text-muted-light hover:text-gray-900">Connect</a>
         <a href="/mydoctorate/" class="block py-2 text-sm text-muted-light hover:text-gray-900">MyDoctorate</a>
         <a href="/vle/" class="block py-2 text-sm text-muted-light hover:text-gray-900">VLE</a>
-        <div class="pt-3">
+        <div class="pt-3 pb-2">
           <a href="/apply/" class="w-full text-center text-white font-medium text-sm px-5 py-2.5 rounded-md block" style="background:#2563eb;">Apply Now</a>
         </div>
       </div>
     </div>
-  </header>
+  </div>
 
   <!-- Sub-header banner -->
-  <div class="pt-16">
+  <div>
     <div class="max-w-7xl mx-auto px-0 sm:px-6">
       <img src="/dcuk-banner-v4.png" alt="Brenkley Doctoral College — Advancing Knowledge, Developing Researchers, Creating Impact" class="w-full block object-cover max-h-24 sm:max-h-40 md:max-h-none md:h-auto" />
     </div>
