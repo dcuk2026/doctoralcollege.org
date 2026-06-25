@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Left: text -->
         <div>
-          <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-gray-900">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-gray-900">
             Shaping the future of doctoral <em class="italic font-light text-blue-600 not-italic">learning</em>
           </h1>
           <p class="text-lg text-muted-light max-w-xl mb-10 leading-relaxed">
@@ -38,17 +38,17 @@ import Layout from '../layouts/Layout.astro';
   <div id="story-modal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="if(event.target===this)this.classList.add('hidden')">
     <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden">
       <!-- Header -->
-      <div class="bg-[#1e3a6e] px-8 py-6 flex items-center justify-between">
+      <div class="bg-[#1e3a6e] px-5 sm:px-8 py-4 sm:py-6 flex items-center justify-between">
         <div class="flex items-center gap-4">
           <img src="/logo.png" alt="Brenkley Doctoral College" class="h-10 w-auto brightness-0 invert" />
         </div>
         <button onclick="document.getElementById('story-modal').classList.add('hidden')" class="text-white/70 hover:text-white text-2xl leading-none">&times;</button>
       </div>
       <!-- Content -->
-      <div class="px-8 py-8">
-        <h2 class="text-2xl font-bold text-gray-900 mb-2">Our Story</h2>
-        <p class="text-accent font-medium text-sm mb-6">Shaping the future of doctoral learning</p>
-        <div class="grid grid-cols-2 gap-6 mb-6">
+      <div class="px-5 sm:px-8 py-6 sm:py-8 overflow-y-auto max-h-[80vh]">
+        <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Our Story</h2>
+        <p class="text-accent font-medium text-sm mb-4 sm:mb-6">Shaping the future of doctoral learning</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
           <div class="bg-blue-50 rounded-xl p-5 border border-blue-100">
             <p class="text-3xl font-bold text-[#1e3a6e]">2020</p>
             <p class="text-sm text-gray-600 mt-1">Founded with a single conviction: that the most important research questions are held by practitioners already working in the field.</p>
