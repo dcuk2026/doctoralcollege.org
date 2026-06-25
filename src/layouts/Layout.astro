@@ -32,7 +32,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
-<body class="bg-bg text-gray-900 font-sans">
+<body class="bg-bg text-gray-900 font-sans overflow-x-hidden">
   <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 bg-accent text-white px-4 py-2 rounded z-50">Skip to content</a>
 
   <!-- Header -->
@@ -61,7 +61,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="lg:hidden border-t border-border bg-white px-6 py-4">
+    <div id="mobile-menu" class="lg:hidden border-t border-border bg-white px-6 py-4 max-h-[80vh] overflow-y-auto">
       <div class="space-y-1">
         <a href="/" class="block py-2 text-sm text-muted-light hover:text-gray-900">Home</a>
         <a href="/about/" class="block py-2 text-sm text-muted-light hover:text-gray-900">About</a>
@@ -109,7 +109,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   <footer class="border-t border-border mt-24 bg-surface">
     <!-- CTA strip -->
     <div class="border-b border-border bg-surface-2">
-      <div class="max-w-7xl mx-auto px-6 py-8 flex flex-wrap gap-4 items-center justify-between">
+      <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row flex-wrap gap-4 items-start sm:items-center justify-between">
         <div class="flex flex-wrap gap-3">
           <a href="/apply/" class="btn-primary">Apply</a>
           <a href="/connect/" class="btn-outline">Book</a>
@@ -117,9 +117,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
           <a href="/symposium/" class="btn-outline">Webinar</a>
         </div>
         <!-- Newsletter -->
-        <form class="flex gap-2" onsubmit="return false;">
-          <input type="email" placeholder="Monthly digest — enter your email" class="bg-white border border-border rounded-md px-4 py-2 text-sm text-gray-900 placeholder:text-muted focus:outline-none focus:border-accent w-64" />
-          <button type="submit" class="btn-primary">Subscribe</button>
+        <form class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto" onsubmit="return false;">
+          <input type="email" placeholder="Monthly digest — enter your email" class="bg-white border border-border rounded-md px-4 py-2 text-sm text-gray-900 placeholder:text-muted focus:outline-none focus:border-accent w-full sm:w-64" />
+          <button type="submit" class="btn-primary w-full sm:w-auto">Subscribe</button>
         </form>
       </div>
     </div>
