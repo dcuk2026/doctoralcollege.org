@@ -61,7 +61,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="lg:hidden border-t border-border bg-white px-6 py-4 max-h-[80vh] overflow-y-auto">
+    <div id="mobile-menu" class="lg:hidden border-t border-border bg-white px-6 py-4 max-h-[75vh] overflow-y-auto">
+      <div class="flex justify-between items-center mb-3">
+        <span class="text-xs font-semibold uppercase tracking-wider text-gray-400">Menu</span>
+        <button id="menu-close" class="text-gray-400 hover:text-gray-900 text-2xl leading-none px-1" aria-label="Close menu">&times;</button>
+      </div>
       <div class="space-y-1">
         <a href="/" class="block py-2 text-sm text-muted-light hover:text-gray-900">Home</a>
         <a href="/about/" class="block py-2 text-sm text-muted-light hover:text-gray-900">About</a>
@@ -201,7 +205,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
     // Mobile menu toggle
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('mobile-menu');
+    const closeBtn = document.getElementById('menu-close');
+    const closeMenu = () => menu?.classList.remove('open');
     toggle?.addEventListener('click', () => menu?.classList.toggle('open'));
+    closeBtn?.addEventListener('click', closeMenu);
+    // Auto-close when any link inside the menu is tapped
+    menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
     // Animated counters
     function animateCounter(el: HTMLElement) {
