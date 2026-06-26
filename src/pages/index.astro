@@ -35,14 +35,14 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Story Modal -->
-  <div id="story-modal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="if(event.target===this)this.classList.add('hidden')">
-    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden">
+  <div id="story-modal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm cursor-pointer" onclick="if(event.target===this)this.classList.add('hidden')">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden cursor-default">
       <!-- Header -->
       <div class="bg-[#1e3a6e] px-5 sm:px-8 py-4 sm:py-6 flex items-center justify-between">
         <div class="flex items-center gap-4">
           <img src="/logo.png" alt="Brenkley Doctoral College" class="h-10 w-auto brightness-0 invert" />
         </div>
-        <button onclick="document.getElementById('story-modal').classList.add('hidden')" class="text-white/70 hover:text-white text-2xl leading-none">&times;</button>
+        <button onclick="document.getElementById('story-modal').classList.add('hidden')" class="text-white hover:text-white/70 text-4xl leading-none p-2 -mr-2" aria-label="Close">&times;</button>
       </div>
       <!-- Content -->
       <div class="px-5 sm:px-8 py-6 sm:py-8 overflow-y-auto max-h-[80vh]">
@@ -67,9 +67,10 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <p class="text-sm text-gray-600 leading-relaxed">Brenkley Doctoral College was established to serve a generation of senior professionals who want to generate original knowledge from within their practice. We offer flexible doctoral programmes, world-class supervision, and a research environment built around the realities of professional life.</p>
-        <div class="mt-6 flex gap-3">
+        <div class="mt-6 flex flex-wrap gap-3 items-center">
           <a href="/about/" class="btn-primary text-sm">Learn More About Us</a>
           <a href="/apply/" class="btn-outline text-sm">Apply Now</a>
+          <button onclick="document.getElementById('story-modal').classList.add('hidden')" class="text-sm text-muted hover:text-gray-900 underline ml-auto">Close</button>
         </div>
       </div>
     </div>
