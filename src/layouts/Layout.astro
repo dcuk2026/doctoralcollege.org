@@ -63,7 +63,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   </header>
 
   <!-- Mobile menu — expands below nav bar, scrollable -->
-  <div id="mobile-menu" class="w-full z-40 lg:hidden bg-white border-t border-border shadow-xl overflow-y-auto" style="max-height:70vh;">
+  <div id="mobile-menu" class="w-full z-40 lg:hidden bg-white border-t border-border shadow-xl overflow-y-auto" style="display:none;max-height:70vh;">
     <div class="px-6 py-4">
       <div class="flex justify-between items-center mb-3 border-b border-border pb-3">
         <span class="text-sm font-bold text-gray-900">Brenkley Doctoral College</span>
@@ -207,12 +207,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   <script>
     // Mobile menu toggle
     const toggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('mobile-menu');
+    const menu = document.getElementById('mobile-menu') as HTMLElement | null;
     const closeBtn = document.getElementById('menu-close');
-    const closeMenu = () => menu?.classList.remove('open');
-    toggle?.addEventListener('click', () => menu?.classList.toggle('open'));
+    const closeMenu = () => { if (menu) menu.style.display = 'none'; };
+    toggle?.addEventListener('click', () => {
+      if (!menu) return;
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    });
     closeBtn?.addEventListener('click', closeMenu);
-    // Auto-close when any link inside the menu is tapped
     menu?.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
     // Animated counters
