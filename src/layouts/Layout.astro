@@ -40,6 +40,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://doctoral
   <!-- Header -->
   <header class="w-full z-50 border-b border-border bg-white shadow-sm">
     <nav class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0 mr-6">
+        <img src="/logo-new.png" alt="Brenkley Doctoral College" class="h-12 w-auto" />
+      </a>
       <!-- Desktop nav -->
       <div class="hidden lg:flex items-center gap-9 mr-4">
         <a href="/" class="nav-link">Home</a>
