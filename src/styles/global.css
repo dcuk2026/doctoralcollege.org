@@ -38,7 +38,7 @@
     @apply bg-blue-100 text-blue-700 border border-blue-200;
   }
   .tag-training {
-    @apply bg-violet-100 text-violet-700 border border-violet-200;
+    @apply bg-blue-100 text-blue-700 border border-blue-200;
   }
   .prose-dark {
     @apply text-muted-light leading-relaxed;
@@ -100,5 +100,6 @@
 /* Mobile menu */
 #mobile-menu { display: none; }
 #mobile-menu.open { display: block; }
+
 
 
